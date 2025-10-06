@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapa de Sitio | RaceMAX</title>
+
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Iconos -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+    summary {
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    details[open] summary {
+      color: #f97316;
+    }
+  </style>
+</head>
+
+<body class="bg-neutral-950 text-gray-100 font-sans min-h-screen p-8">
+  <div class="max-w-4xl mx-auto space-y-6">
+    <h1 class="text-4xl font-bold text-center text-white mb-8">
+      🗺️ Mapa de Sitio — <span class="text-orange-500">RaceMAX</span>
+    </h1>
+
+    <!-- Objetivo General -->
+    <section class="bg-neutral-900 p-6 rounded-2xl shadow-md border border-neutral-800">
+      <h2 class="text-xl font-semibold mb-3 text-orange-400">🎯 Objetivo General</h2>
+      <p class="text-gray-300">
+        Presentar a RaceMAX como el espacio líder en Buenos Aires para experimentar la simulación de carreras de Fórmula 1 de manera realista y accesible para todos los niveles.
+        El sitio busca generar emoción, transmitir profesionalismo y facilitar la conversión (reservas).
+      </p>
+    </section>
+
+    <!-- Página de Inicio -->
+    <details class="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 group">
+      <summary class="flex items-center justify-between text-lg font-semibold text-white">
+        <span>🏁 1. Página de Inicio</span>
+        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform group-open:rotate-180"></i>
+      </summary>
+      <div class="mt-4 space-y-3 text-gray-300">
+        <p><strong>Propósito:</strong> Captar la atención del usuario desde el primer momento y resumir la propuesta de valor de RaceMAX.</p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><strong>Sección Hero:</strong> Fondo en video o imagen, título poderoso y botón CTA de reserva.</li>
+          <li><strong>Métricas:</strong> Tres bloques con estadísticas clave (carreras, clientes, circuitos).</li>
+          <li><strong>Nuestra Historia:</strong> Breve narrativa sobre la marca y su trayectoria desde 2018.</li>
+          <li><strong>La Experiencia Más Realista:</strong> Tres pilares: tecnología, variedad y accesibilidad.</li>
+          <li><strong>Novedades (integrada):</strong> Noticias breves sobre circuitos o eventos.</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- Página de Experiencias -->
+    <details class="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 group">
+      <summary class="flex items-center justify-between text-lg font-semibold text-white">
+        <span>🏎️ 2. Página de Catálogo / Experiencias</span>
+        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform group-open:rotate-180"></i>
+      </summary>
+      <div class="mt-4 space-y-3 text-gray-300">
+        <p><strong>Propósito:</strong> Mostrar las experiencias disponibles y motivar la reserva.</p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><strong>Circuitos Destacados:</strong> Galería visual con los 10 más importantes.</li>
+          <li><strong>Equipamiento Profesional:</strong> Listado técnico del hardware de simulación.</li>
+          <li><strong>Elegí tu Experiencia:</strong> Planes Individual, Completa y Grupal, con CTA de reserva.</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- Página Sobre Nosotros -->
+    <details class="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 group">
+      <summary class="flex items-center justify-between text-lg font-semibold text-white">
+        <span>👥 3. Página “Sobre Nosotros”</span>
+        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform group-open:rotate-180"></i>
+      </summary>
+      <div class="mt-4 space-y-3 text-gray-300">
+        <p><strong>Propósito:</strong> Profundizar en la relación con el cliente y generar confianza.</p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><strong>Testimonios:</strong> Carrusel de opiniones reales de clientes.</li>
+          <li><strong>Eventos Especiales:</strong> Tarjetas sobre Cumpleaños, Corporativos y Torneos.</li>
+          <li><strong>Preguntas Frecuentes:</strong> Sección desplegable con respuestas útiles.</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- Página de Contacto -->
+    <details class="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 group">
+      <summary class="flex items-center justify-between text-lg font-semibold text-white">
+        <span>📩 4. Página de Contacto y Reservas</span>
+        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform group-open:rotate-180"></i>
+      </summary>
+      <div class="mt-4 space-y-3 text-gray-300">
+        <p><strong>Propósito:</strong> Facilitar el contacto directo y las reservas.</p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><strong>Información de Contacto:</strong> Mapa + dirección, mail, teléfono y horarios.</li>
+          <li><strong>Formulario de Consulta:</strong> Formulario funcional vinculado al correo principal.</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- Footer -->
+    <details class="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 group">
+      <summary class="flex items-center justify-between text-lg font-semibold text-white">
+        <span>⬇️ 5. Footer (Pie de Página)</span>
+        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform group-open:rotate-180"></i>
+      </summary>
+      <div class="mt-4 space-y-3 text-gray-300">
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Logo RaceMAX adaptativo.</li>
+          <li>Enlaces rápidos: Inicio, Experiencias, Sobre Nosotros, Contacto.</li>
+          <li>Datos de contacto: Dirección, Email, Teléfono, Horarios.</li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
